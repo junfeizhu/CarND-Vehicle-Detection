@@ -12,11 +12,11 @@ Next, I tried several different classifiers and finally chose the Support vector
 ## Sliding Window Search and heat map
 Next, I modified the **find_cars()** function provided by the course to do sliding window search. Instead of setting only one scale, I set a list of scales from 1 to 3. By doing this, I can detect the cars both close to the our vehicle and far away from our vehicle. One example was shown below:
 
-![find_cars_image](https://note.youdao.com/favicon.ico)
+![find_cars_image](https://raw.githubusercontent.com/junfeizhu/CarND-Vehicle-Detection/master/output_images/find_cars_image.PNG)
 
 Then, I applied the functions **add_heat()**, **apply_threshold()** and **draw_labeled_bboxes()**. The threshold I chose here is 2. I got the following result:
 
-![apply_threshold_image](https://note.youdao.com/favicon.ico)
+![apply_threshold_image](https://raw.githubusercontent.com/junfeizhu/CarND-Vehicle-Detection/master/output_images/apply_threshold_image.PNG)
 
 ## Final Processor
 Finally, I put everything together to get the final processor. I also added the lane detection functions from last project into the final processor. The final video was in the 'test_videos_output' folder. My final result looks well except several false positives.
